@@ -1,0 +1,23 @@
+package com.example.demo.client;
+
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.web.client.RestClient;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import java.util.Collections;
+
+public class EmployeeClient {
+
+    WebClient client = WebClient.create("http://localhost:8080");
+
+/*    WebClient webClient = WebClient.builder()
+            .baseUrl("http://localhost:8080")
+            .defaultCookie("cookieKey", "cookieValue")
+            .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+            .defaultUriVariables(Collections.singletonMap("url", "http://localhost:8080"))
+            .build();*/
+
+    //WebClient.UriSpec<WebClient.RequestBodySpec> uriSpec = client.get();
+
+}
