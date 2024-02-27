@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoApplication {
 	public static void main(String[] args) {
-		System.out.println("App started at " + System.currentTimeMillis());
+		System.out.println("App started at - " + System.currentTimeMillis());
 		SpringApplication.run(DemoApplication.class, args);
 	}
 }
