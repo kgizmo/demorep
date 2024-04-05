@@ -22,13 +22,13 @@ jobs:
           java-version: '21'
 
       - name: Build with Maven
-        run: gradle clean build
+        run: gradle clean jar
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
+          path: '${{ github.workspace }}/*.jar'
 
   deploy:
     runs-on: windows-latest
